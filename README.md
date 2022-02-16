@@ -1,3 +1,9 @@
+# Referências
+
+ - https://www.baeldung.com/quarkus-io : mostra como fazer deploy no OpenShift
+
+
+
 # quarkus-exemplo Project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
