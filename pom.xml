@@ -34,7 +34,7 @@
 
     <dependencies>
 
-        <!-- REST -->
+        <!-- REST [O ArC (Injeção de Dependência) vem como dependência do REST]-->
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-resteasy</artifactId>
@@ -75,6 +75,8 @@
                     </compilerArgs>
                 </configuration>
             </plugin>
+
+            <!-- Testes -->
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${surefire-plugin.version}</version>
@@ -85,6 +87,7 @@
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
     <profiles>
