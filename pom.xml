@@ -47,6 +47,20 @@
         </dependency>
 
 
+        <!-- Microsoft Graph -->
+        <dependency>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-identity</artifactId>
+            <version>1.2.5</version> <!-- 1.4.6 -->
+        </dependency>
+
+        <dependency>
+            <groupId>com.microsoft.graph</groupId>
+            <artifactId>microsoft-graph</artifactId>
+            <version>3.2.0</version> <!-- 5.15.0 -->
+        </dependency>
+
+
     </dependencies>
 
     <build>
