@@ -1,6 +1,14 @@
+
 # Referências
 
  - https://www.baeldung.com/quarkus-io : mostra como fazer deploy no OpenShift
+
+
+
+
+# Microsoft Graph
+
+ -https://github.com/Azure-Samples/ms-identity-java-daemon/tree/master/msal-client-credential-secret#choose-the-azure-ad-tenant-where-you-want-to-create-your-applications ]
 
 
 

@@ -22,7 +22,7 @@ public class MicrosoftGraphAuth {
 
         // Create the auth provider
 
-        final DeviceCodeCredential credential = new DeviceCodeCredentialBuilder()
+        DeviceCodeCredential credential = new DeviceCodeCredentialBuilder()
                 .clientId(applicationId)
                 .challengeConsumer(challenge -> System.out.println(challenge.getMessage()))
                 .build();

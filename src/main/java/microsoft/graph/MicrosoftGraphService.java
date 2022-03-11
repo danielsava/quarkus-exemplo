@@ -22,8 +22,11 @@ public class MicrosoftGraphService {
 
         log.info("Java Graph Tutorial");
 
-
         MicrosoftGraphAuth.graphAuth(appTutorialConfig.id(), appTutorialConfig.scopes());
+
+        final String accessToken = MicrosoftGraphAuth.getUserAccessToken();
+
+        log.info("Access Token: " + accessToken);
 
         Scanner input = new Scanner(System.in);
 
@@ -53,7 +56,7 @@ public class MicrosoftGraphService {
                     log.info("Goodbye ...");
                     break;
                 case 1:
-                    // Display access token
+                    log.info("Access Token: " + accessToken);
                     break;
                 case 2:
                     // List the calendar
