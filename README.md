@@ -8,7 +8,16 @@
 
 # Microsoft Graph
 
- -https://github.com/Azure-Samples/ms-identity-java-daemon/tree/master/msal-client-credential-secret#choose-the-azure-ad-tenant-where-you-want-to-create-your-applications ]
+ - https://docs.microsoft.com/pt-br/graph/tutorials/java?tutorial-step=4
+ - https://github.com/Azure-Samples/ms-identity-java-daemon/tree/master/msal-client-credential-secret#choose-the-azure-ad-tenant-where-you-want-to-create-your-applications
+ - https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/identity/azure-identity#credential-classes (Azure SDK for Java, Azure Identity client library for java)
+ - https://github.com/microsoftgraph/msgraph-sdk-java (Microsoft Graph SDK for Java)
+
+Formas de Autenticação:
+ - https://docs.microsoft.com/pt-br/graph/sdks/choose-authentication-providers?tabs=Java
+
+Scopes e Permissões
+ - https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent (scope´s and permissions)
 
 
 

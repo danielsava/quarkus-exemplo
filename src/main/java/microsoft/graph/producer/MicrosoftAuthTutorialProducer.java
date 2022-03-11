@@ -3,7 +3,8 @@ package microsoft.graph.producer;
 import com.azure.identity.DeviceCodeCredential;
 import com.azure.identity.DeviceCodeCredentialBuilder;
 import com.microsoft.graph.authentication.TokenCredentialAuthProvider;
-import microsoft.graph.config.MicrosoftAppTutorialConfig;
+import microsoft.graph.config.MicrosoftTutorialConfig;
+import microsoft.graph.producer.qualifiers.Tutorial;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Produces;
@@ -11,19 +12,18 @@ import javax.inject.Inject;
 import java.util.List;
 
 @ApplicationScoped
-public class MicrosoftGraphAuthProviderProducer {
+public class MicrosoftAuthTutorialProducer {
 
     @Inject
-    MicrosoftAppTutorialConfig appTutorialConfig;
+    MicrosoftTutorialConfig appTutorialConfig;
 
-    // Create the auth provider
-    @Produces
+    @Produces @Tutorial
     TokenCredentialAuthProvider tokenCredentialAuthProvider() {
 
         String applicationId = appTutorialConfig.id();
         List<String> scopes = appTutorialConfig.scopes();
 
-        DeviceCodeCredential credential = new DeviceCodeCredentialBuilder()
+        final DeviceCodeCredential credential = new DeviceCodeCredentialBuilder()
                 .clientId(applicationId)
                 .challengeConsumer(challenge -> System.out.println(challenge.getMessage()))
                 .build();

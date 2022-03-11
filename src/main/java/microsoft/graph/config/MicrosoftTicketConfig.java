@@ -5,7 +5,7 @@ import io.smallrye.config.ConfigMapping;
 import java.util.List;
 
 @ConfigMapping(prefix = "microsoft.graph.app.ticket")
-public interface MicrosoftAppTicketConfig {
+public interface MicrosoftTicketConfig {
 
 
     String tenant();
@@ -17,8 +17,6 @@ public interface MicrosoftAppTicketConfig {
     String secret();
 
     List<String> scopes();
-
-    String scope();
 
 
 }
