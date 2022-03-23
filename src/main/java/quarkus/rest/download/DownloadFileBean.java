@@ -6,13 +6,19 @@ import org.jboss.resteasy.reactive.RestForm;
 import javax.ws.rs.core.MediaType;
 import java.io.File;
 
-public class DownloadFormDataBean {
+/**
+ *   https://quarkus.io/guides/resteasy-reactive#handling-multipart-form-data
+ *
+ */
+
+public class DownloadFileBean {
+
 
     @RestForm
-    String name;
+    public String name;
 
     @RestForm
     @PartType(MediaType.APPLICATION_OCTET_STREAM)
-    File file;
+    public File file;
 
 }

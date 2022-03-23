@@ -1,17 +1,13 @@
-package quarkus.rest;
+package quarkus.rest.uri.parametros;
 
 import org.jboss.resteasy.reactive.*;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
-@Path("hello")
-public class HelloResource {
+@Path("parametro")
+public class ParametroResource {
 
-    @GET
-    public String hello() {
-        return "hello";
-    }
 
     @GET
     @Path("{name}/{age:\\d+}")

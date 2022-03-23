@@ -1,12 +1,16 @@
 package quarkus.rest.download;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import org.jboss.resteasy.reactive.MultipartForm;
+
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
 /**
- *  https://quarkus.io/guides/resteasy-reactive#handling-multipart-form-data
+ *  Referência:
+ *     - https://quarkus.io/guides/resteasy-reactive#handling-multipart-form-data
+ *
+ *     IMPORTANTE:
+ *      - For the time being, returning Multipart data is limited to be blocking endpoints. (Ou seja, não possui suporte no Reactive)
  *
  */
 
@@ -14,12 +18,21 @@ import javax.ws.rs.core.MediaType;
 public class FileResource {
 
 
+    // Upload File
+    @POST
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.MULTIPART_FORM_DATA)
+    @Path("upload")
+    public String form(@MultipartForm UploadFileBean uploadFileBean) { // The use of "@MultipartForm" is actually unnecessary as RESTEasy Reactive can infer this information from the use of @Consumes(MediaType.MULTIPART_FORM_DATA)
 
+        return null; // return something
+    }
+
+    // Download File
     @GET
     @Produces(MediaType.MULTIPART_FORM_DATA)
     @Path("file")
-    public DownloadFormDataBean getFile() {
-
+    public DownloadFileBean getFile() {
 
         return null; // return something
     }
