@@ -22,7 +22,7 @@ public class LegumeResource {
 
 
     @PostConstruct
-    private void init() {
+    void init() {
         legumes.add(new Legume("Carrot", "Root vegetable"));
         legumes.add(new Legume("Zucchini", "Summer squash"));
     }

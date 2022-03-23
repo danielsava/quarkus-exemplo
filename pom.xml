@@ -43,7 +43,7 @@
 
     <dependencies>
 
-        <!-- REST [O ArC (Injeção de Dependência) vem como dependência do REST]-->
+        <!-- REST [O ArC (Injeção de Dependência) vem como dependência do REST]
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-resteasy</artifactId>
@@ -53,6 +53,19 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-resteasy-jackson</artifactId>
         </dependency>
+        -->
+
+        <!-- REST Reactive: https://quarkus.io/guides/resteasy-reactive -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-resteasy-reactive</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-resteasy-reactive-jackson</artifactId>
+        </dependency>
+
 
         <!-- Dependency Injection -->
         <dependency>

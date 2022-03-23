@@ -1,4 +1,4 @@
-package quarkus.bean;
+package quarkus.rest.service;
 
 import javax.enterprise.context.ApplicationScoped;
 

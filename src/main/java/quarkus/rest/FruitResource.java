@@ -53,7 +53,7 @@ public class FruitResource {
 
 
     @PostConstruct
-    private void init() {
+    void init() {
         fruits.add(new Fruit("Apple", "Winter fruit"));
         fruits.add(new Fruit("Pineapple", "Tropical fruit"));
     }
