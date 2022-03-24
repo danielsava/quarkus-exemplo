@@ -4,7 +4,6 @@ package quarkus.rest.async;
 import io.smallrye.mutiny.Multi;
 import io.smallrye.mutiny.Uni;
 
-import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
@@ -30,7 +29,8 @@ public class AsyncResource {
     // and terminate this request.
     @GET
     public Uni<Book> getBookAsync() {
-        return null; // Book.findByIsbn("978-2081229297")
+        return Uni.createFrom().item(Book.of(1, "Livro Teste"));
+        // Book.findByIsbn("978-2081229297")
     }
 
 

@@ -1,4 +1,4 @@
-package quarkus.rest.filter;
+package quarkus.rest.filter.request;
 
 import io.quarkus.logging.Log;
 import io.vertx.core.http.HttpServerRequest;
