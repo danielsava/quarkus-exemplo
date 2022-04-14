@@ -43,6 +43,13 @@
 
     <dependencies>
 
+        <!-- Dependency Injection [O ArC (Injeção de Dependência) vem como dependência do REST
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-arc</artifactId>
+        </dependency>
+        -->
+
         <!-- REST [O ArC (Injeção de Dependência) vem como dependência do REST]
         <dependency>
             <groupId>io.quarkus</groupId>
@@ -78,20 +85,17 @@
             <artifactId>quarkus-rest-client-reactive-jackson</artifactId>
         </dependency>
 
-        <!-- Dependency Injection [O ArC (Injeção de Dependência) vem como dependência do REST
-        <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-arc</artifactId>
-        </dependency>
-        -->
-
-
         <!-- Multiny -->
         <!--dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-resteasy-mutiny</artifactId>
         </dependency-->
 
+        <!-- Fault Tolerance -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-smallrye-fault-tolerance</artifactId>
+        </dependency>
 
         <!-- Microsoft Graph -->
         <dependency>
