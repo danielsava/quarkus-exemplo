@@ -5,6 +5,13 @@
 
 
 
+# Postgres
+
+
+```sh
+docker run -it --rm=true --name postgres-quarkus -e POSTGRES_USER=quarkus -e POSTGRES_PASSWORD=quarkus -e POSTGRES_DB=fruits -p 5432:5432 postgres:14.1
+```
+
 
 # Microsoft Graph
 
