@@ -97,17 +97,41 @@
             <artifactId>quarkus-smallrye-fault-tolerance</artifactId>
         </dependency>
 
-        <!-- Hibernate Reactive Panache -->
+
+        <!-- Agroal: e o 'datasource provider' e o 'connection pooling' utilizado no Quarkus. Vem como dependência transitiva do Hibernate ORM -->
+
+        <!-- Hibernate Classic: traz o Agroal como dependência transitiva -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-hibernate-orm</artifactId>
+        </dependency>
+
+        <!-- PostgreSQL Classic -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-jdbc-postgresql</artifactId>
+        </dependency>
+
+        <!-- Hibernate Classic with Panache -->
+
+
+
+
+        <!-- Hibernate Reactive Panache
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-hibernate-reactive-panache</artifactId>
         </dependency>
+        -->
 
-        <!-- PostgreSQL Reactive SQL Client (driver). Hibernate Reactive uses the reactive-pg-client with PostgreSQL under the hood -->
+        <!-- PostgreSQL Reactive SQL Client (driver). Hibernate Reactive uses the reactive-pg-client with PostgreSQL under the hood
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-reactive-pg-client</artifactId>
         </dependency>
+        -->
+
+
 
 
 
