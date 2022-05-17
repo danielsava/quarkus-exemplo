@@ -3,6 +3,7 @@ package quarkus.orm.classic.postgres.base.model;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
+
 @Entity
 @Table(name = "pessoa")
 @NamedQuery(name = "Pessoa.obterTodos", query = "select p from Pessoa p order by p.nome")
