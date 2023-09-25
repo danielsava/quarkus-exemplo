@@ -98,7 +98,34 @@
         </dependency>
 
 
-        <!-- Agroal: e o 'datasource provider' e o 'connection pooling' utilizado no Quarkus. Vem como dependência transitiva do Hibernate ORM -->
+        <!-- Agroal: e o 'datasource provider' e o 'connection pooling' utilizado pelo Quarkus. Vem como dependência transitiva do Hibernate ORM -->
+
+        <!-- PostgreSQL JDBC driver -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-jdbc-postgresql</artifactId>
+        </dependency>
+
+        <!-- PostgreSQL JDBC driver
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-jdbc-mysql</artifactId>
+        </dependency>
+        -->
+
+        <!-- PostgreSQL Reactive Driver
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-reactive-pg-client</artifactId>
+        </dependency>
+        -->
+
+        <!-- MySQL Reactive Driver
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-reactive-mysql-client</artifactId>
+        </dependency>
+        -->
 
         <!-- Hibernate Classic: traz o Agroal como dependência transitiva -->
         <dependency>
@@ -106,16 +133,7 @@
             <artifactId>quarkus-hibernate-orm</artifactId>
         </dependency>
 
-        <!-- PostgreSQL Classic -->
-        <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-jdbc-postgresql</artifactId>
-        </dependency>
-
         <!-- Hibernate Classic with Panache -->
-
-
-
 
         <!-- Hibernate Reactive Panache
         <dependency>
@@ -123,16 +141,6 @@
             <artifactId>quarkus-hibernate-reactive-panache</artifactId>
         </dependency>
         -->
-
-        <!-- PostgreSQL Reactive SQL Client (driver). Hibernate Reactive uses the reactive-pg-client with PostgreSQL under the hood
-        <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-reactive-pg-client</artifactId>
-        </dependency>
-        -->
-
-
-
 
 
         <!-- Microsoft Graph -->
